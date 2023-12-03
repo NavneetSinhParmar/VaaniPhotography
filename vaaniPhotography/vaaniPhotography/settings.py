@@ -29,7 +29,8 @@ SECRET_KEY = 'django-insecure-wi81vhr#f*n=q3sx5y!$c^38h!$5%!@(^6u*2sb%y6a_ydez@l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["172.31.19.149","vaaniphotography.com"]
+
 
 
 # Application definition
@@ -109,6 +110,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',  # Assuming your 'static' folder is in the project root.
+    # Add other directories if needed:
+    # '/path/to/your/additional/static/folder/',
+]
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
