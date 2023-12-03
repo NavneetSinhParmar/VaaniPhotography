@@ -1,0 +1,1 @@
+ E:\Freelencing\photographyProject\myenv\Scripts\Activate.ps1
