@@ -1,510 +1,480 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en-US" prefix="og: https://ogp.me/ns#"> <!--<![endif]-->
-<!--for loading header foote and include in files with static content-->
+{% extends 'layout.html' %}
+{% block body %}
 {% load static %}
-
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
-
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
-
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
-
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
-</style>
-
-</head>
-
-
-<body
-    class="home page-template-default page page-id-38 _masterslider _msp_version_3.2.14 header-transparent no-section-scroll top-header none be-themes-layout-layout-wide disable_rev_slider_bg_check opt-panel-cache-off"
-    data-be-site-layout='layout-wide' data-be-page-template='page'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-dark-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0 0.498039215686" />
-                    <feFuncG type="table" tableValues="0 0.498039215686" />
-                    <feFuncB type="table" tableValues="0 0.498039215686" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0 1" />
-                    <feFuncG type="table" tableValues="0 1" />
-                    <feFuncB type="table" tableValues="0 1" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-purple-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0.549019607843 0.988235294118" />
-                    <feFuncG type="table" tableValues="0 1" />
-                    <feFuncB type="table" tableValues="0.717647058824 0.254901960784" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-blue-red">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0 1" />
-                    <feFuncG type="table" tableValues="0 0.278431372549" />
-                    <feFuncB type="table" tableValues="0.592156862745 0.278431372549" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-midnight">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0 0" />
-                    <feFuncG type="table" tableValues="0 0.647058823529" />
-                    <feFuncB type="table" tableValues="0 1" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-magenta-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0.780392156863 1" />
-                    <feFuncG type="table" tableValues="0 0.949019607843" />
-                    <feFuncB type="table" tableValues="0.352941176471 0.470588235294" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-purple-green">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0.650980392157 0.403921568627" />
-                    <feFuncG type="table" tableValues="0 1" />
-                    <feFuncB type="table" tableValues="0.447058823529 0.4" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
-        <defs>
-            <filter id="wp-duotone-blue-orange">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
-                <feComponentTransfer color-interpolation-filters="sRGB">
-                    <feFuncR type="table" tableValues="0.0980392156863 1" />
-                    <feFuncG type="table" tableValues="0 0.662745098039" />
-                    <feFuncB type="table" tableValues="0.847058823529 0.419607843137" />
-                    <feFuncA type="table" tableValues="1 1" />
-                </feComponentTransfer>
-                <feComposite in2="SourceGraphic" operator="in" />
-            </filter>
-        </defs>
-    </svg>
-    <div class="search-box-wrapper style2-header-search-widget">
-        <a href="#" class="header-search-form-close"><i class="icon-icon_close font-icon"></i></a>
-        <div class="search-box-inner1">
-            <div class="search-box-inner2">
-                <form role="search" method="get" class="searchform" action="https://oshinewptheme.com/v22/">
-                    <input type="text" placeholder="Search ..." value="" name="s" class="s" />
-                    <i class="search-icon icon-search font-icon"></i>
-                    <input type="submit" class="search-submit" value="" />
-                </form>
-            </div>
+<div class="top-single-bkg single-post-topheader  topsingleimage "
+    style="background-image: url('{% static 'Album/wedding/01.jpg' %}');">
+    <div class="inner-desc">
+        <div class="container">
+            <h1 class="post-title single-post-title"> Vaani Photography</h1>
+            <!-- <ul class="post-meta">
+                <li class="meta-date">January 14, 2023</li>
+                <li class="meta-categ"><a href="https://matchthemes.com/demowp/gleam/category/news/"
+                        rel="category tag">News</a></li>
+            </ul> -->
         </div>
     </div>
-    <div id="main-wrapper">
-        <div id="main" class="ajaxable layout-wide">
-
-            <!-- Header Section Begin -->
-            <header id="header">
-                <div id="header-inner-wrap" class="transparent background--dark style1"
-                    data-headerscheme="background--dark">
-                    <div id="header-wrap" class=" clearfix" data-default-height="120" data-sticky-height="120">
-                        <div class="logo">
-                            <a href="https://oshinewptheme.com/v22"><img class="transparent-logo dark-scheme-logo" src="{% static 'wp-content/uploads/logoofvaaniphotography.jpg' %}"
-                                    alt="Oshine - Lifestyle Photography" /><img
-                                    class="transparent-logo light-scheme-logo"
-                                    src="{% static 'wp-content/uploads/vaaniphotography.png' %}"
-                                    alt="Oshine - Lifestyle Photography" /><img class="normal-logo" src="{% static 'wp-content/uploads/logoofvaaniphotography.jpg' %}"
-                                    alt="Oshine - Lifestyle Photography" /><img class="sticky-logo" src="{% static 'wp-content/uploads/logoofvaaniphotography.jpg' %}"
-                                    alt="Oshine - Lifestyle Photography" /></a>
-                        </div>
-                        <div id="header-controls-right">
-                            <div class="header-code-widgets"> </div>
-                            <div class="mobile-nav-controller-wrap">
-                                <div class="menu-controls mobile-nav-controller" title="Mobile Menu Controller"> <span
-                                        class="be-mobile-menu-icon style1">
-                                        <span class="hamburger-line-1"></span>
-                                        <span class="hamburger-line-2"></span>
-                                        <span class="hamburger-line-3"></span>
-                                    </span></div>
+</div>
+<div id="wrap-content" class="blog-post-single">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9  posts-holder post-sidebar ">
+                <article id="post-13"
+                    class="blog-item-1col single-post-holder single-article-container post-13 post type-post status-publish format-standard has-post-thumbnail hentry category-news tag-family tag-hugs tag-mom">
+                    <div class="post-content single-post-content single-article-page clearfix">
+                        <p>At Vaani Photography, we believe that every moment tells a unique story. Our journey began with a passion for capturing those stories and turning them into cherished memories. Founded in the heart of India, our photography studio has since grown into a creative hub for capturing life's most beautiful moments.
+                        </p>
+                        <h2 class="wp-block-heading">Gallery block<br></h2>                        
+                        <h3 class="elementor-icon-box-title"> <a href="{%  url 'wedding' %}">Wedding</a></h3>
+                        <ul
+                            class="wp-block-gallery columns-3 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/wedding/11.jpg' %}"><img decoding="async"
+                                            fetchpriority="high" width="1300" height="1000"
+                                            src="{% static 'Album/wedding/11.jpg' %}" alt="" data-id="39"
+                                            data-link="https://matchthemes.com/demowp/gleam/enjoy-the-nature/blog-7/"
+                                            class="wp-image-39"                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/wedding/15.jpg' %}"><img decoding="async" width="1300"
+                                            height="1000" src="{% static 'Album/wedding/15.jpg' %}" alt="" data-id="10"
+                                            data-link="https://matchthemes.com/demowp/gleam/street-fashion-session/blog-1/"
+                                            class="wp-image-10"                                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>                            
+                        </ul>
+                        <h3 class="elementor-icon-box-title"> <a href="{%  url 'pre_wedding' %}">Pre-Wedding</a> </h3>
+                        <ul
+                            class="wp-block-gallery columns-3 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Prewedding/11.jpg' %}"><img decoding="async"
+                                            fetchpriority="high" width="1300" height="1000"
+                                            src="{% static 'Album/Prewedding/05.jpg' %}" alt="" data-id="39"
+                                            data-link="https://matchthemes.com/demowp/gleam/enjoy-the-nature/blog-7/"
+                                            class="wp-image-39"                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Prewedding/15.jpg' %}"><img decoding="async" width="1300"
+                                            height="1000" src="{% static 'Album/Prewedding/13.jpg' %}" alt="" data-id="10"
+                                            data-link="https://matchthemes.com/demowp/gleam/street-fashion-session/blog-1/"
+                                            class="wp-image-10"                                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>                            
+                        </ul>
+                        <!-- <h3 class="elementor-icon-box-title"> <span> Meternity </span></h3>
+                        <ul
+                            class="wp-block-gallery columns-3 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Prewedding/11.jpg' %}"><img decoding="async"
+                                            fetchpriority="high" width="1300" height="1000"
+                                            src="{% static 'Album/Prewedding/05.jpg' %}" alt="" data-id="39"
+                                            data-link="https://matchthemes.com/demowp/gleam/enjoy-the-nature/blog-7/"
+                                            class="wp-image-39"                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Prewedding/15.jpg' %}"><img decoding="async" width="1300"
+                                            height="1000" src="{% static 'Album/Prewedding/13.jpg' %}" alt="" data-id="10"
+                                            data-link="https://matchthemes.com/demowp/gleam/street-fashion-session/blog-1/"
+                                            class="wp-image-10"                                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>                            
+                        </ul> -->
+                        <h3 class="elementor-icon-box-title"> <a href="{%  url 'baby_born' %}"> New Born</a></h3>
+                        <ul
+                            class="wp-block-gallery columns-3 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Baby/01.jpg' %}"><img decoding="async"
+                                            fetchpriority="high" width="1300" height="1000"
+                                            src="{% static 'Album/Baby/01.jpg' %}" alt="" data-id="39"
+                                            data-link="https://matchthemes.com/demowp/gleam/enjoy-the-nature/blog-7/"
+                                            class="wp-image-39"                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Baby/03.jpg' %}"><img decoding="async" width="1300"
+                                            height="1000" src="{% static 'Album/Baby/03.jpg' %}" alt="" data-id="10"
+                                            data-link="https://matchthemes.com/demowp/gleam/street-fashion-session/blog-1/"
+                                            class="wp-image-10"                                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>                            
+                        </ul>
+                        <h3 class="elementor-icon-box-title"> <a href="{%  url 'baby_photoshoot' %}"> Baby Photoshoot</a></h3>
+                        <ul
+                            class="wp-block-gallery columns-3 is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Baby/07.jpg' %}"><img decoding="async"
+                                            fetchpriority="high" width="1300" height="1000"
+                                            src="{% static 'Album/Baby/07.jpg' %}" alt="" data-id="39"
+                                            data-link="https://matchthemes.com/demowp/gleam/enjoy-the-nature/blog-7/"
+                                            class="wp-image-39"                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>
+                            <li class="blocks-gallery-item">
+                                <figure><a href="{% static 'Album/Baby/05.jpg' %}"><img decoding="async" width="1300"
+                                            height="1000" src="{% static 'Album/Baby/07.jpg' %}" alt="" data-id="10"
+                                            data-link="https://matchthemes.com/demowp/gleam/street-fashion-session/blog-1/"
+                                            class="wp-image-10"                                            
+                                            sizes="(max-width: 1300px) 100vw, 1300px" /></a></figure>
+                            </li>                            
+                        </ul>
+                        <p> Pulvinar sit amet eget ante. Suspendisse eget augue eu elit mattis
+                            ultrices eu ut lacus. Ut et metus sit amet erat tristique tincidunt sed
+                            vel nibh. Sed quis lacus ut nisi ultrices faucibus.</p>
+                        <blockquote class="wp-block-quote">
+                            <p> The real voyage of discovery consists not in seeking new landscapes, but in having
+                                new eyes.</p><cite>Marcel Proust</cite>
+                        </blockquote>
+                        <p> Vivamus auctor condimentum sem et gravida. Maecenas id enim pharetra,
+                            sollicitudin dui eget, blandit lorem. Nunc vitae blandit lectus. Donec
+                            lacinia magna sit amet arcu aliquet luctus. Maecenas vehicula metus
+                            nisi, nec finibus justo vulputate eget.</p>
+                        
+                    </div>
+                    <!-- <div class="tags-single-page"> <a href="https://matchthemes.com/demowp/gleam/tag/family/"
+                            rel="tag">family</a> <a href="https://matchthemes.com/demowp/gleam/tag/hugs/"
+                            rel="tag">hugs</a> <a href="https://matchthemes.com/demowp/gleam/tag/mom/" rel="tag">mom</a>
+                    </div> -->
+                    
+                    <section id="comments" class="comm-title">
+                        <div class="respond">
+                            <div id="comment-form-holder">
+                                <div id="respond" class="comment-respond">
+                                    <h3 id="reply-title" class="comment-reply-title"><span>Leave a Comment</span>
+                                        <small><a rel="nofollow" id="cancel-comment-reply-link"
+                                                href="index.html#respond" style="display:none;">Cancel
+                                                reply</a></small>
+                                    </h3>
+                                    <form action="https://matchthemes.com/demowp/gleam/wp-comments-post.php"
+                                        method="post" id="commentform" class="comment-form" novalidate>
+                                        <p><textarea name="comment" id="msg-contact" placeholder="Comment" rows="7"
+                                                tabindex="3"></textarea></p>
+                                        <div class="row">
+                                            <div class="col-sm-4"><input type="text" name="author" id="author"
+                                                    class="comm-field" value="" placeholder="Name" size="22"
+                                                    tabindex="1" /></div>
+                                            <div class="col-sm-4"><input type="text" name="email" id="email"
+                                                    class="comm-field" value="" placeholder="Email" size="22"
+                                                    tabindex="2" /></div>
+                                            <div class="col-sm-4"><input type="text" name="url" id="url"
+                                                    class="comm-field" value="" placeholder="Website" size="22"
+                                                    tabindex="3" /></div>
+                                        </div>
+                                        <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent"
+                                                name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label
+                                                for="wp-comment-cookies-consent">Save my name, email, and website in
+                                                this browser for the next time I comment.</label></p>
+                                        <p class="form-submit"><input name="submit" type="submit" id="submit"
+                                                class="submit" value="Post Comment" /> <input type='hidden'
+                                                name='comment_post_ID' value='13' id='comment_post_ID' /> <input
+                                                type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                        </p>
+                                        <p style="display: none;"><input type="hidden" id="akismet_comment_nonce"
+                                                name="akismet_comment_nonce" value="5001fde4ee" /></p>
+                                        <p style="display: none !important;"><label>&#916;<textarea
+                                                    name="ak_hp_textarea" cols="45" rows="8"
+                                                    maxlength="100"></textarea></label><input type="hidden" id="ak_js_1"
+                                                name="ak_js" value="133" />
+                                            <script data-cfasync="false"
+                                                src="{% static 'cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script>
+                                            <script>document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());</script>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div id="output-contact"></div>
                             </div>
                         </div>
-                        <div id="header-bottom-bar">
-                            <nav id="navigation" class="clearfix">
-                                <div class="menu">
-                                    <ul id="menu" class="clearfix none">
-                                        <li id="menu-item-128"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-38 current_page_item menu-item-128">
-                                            <a title="Home" href="index.html" aria-current="page">Home</a>
-                                        </li>
-                                        <li id="menu-item-126"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
-                                            <a title="About" href="about/index.html">About</a>
-                                        </li>
-                                        <li id="menu-item-127"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-127">
-                                            <a title="Portfolio" href="portfolio/index.html">Portfolio</a>
-                                            <span class="mobile-sub-menu-controller"><i
-                                                    class="icon-icon_plus"></i></span>
-                                            <ul class="sub-menu clearfix">
-                                                <li id="menu-item-144"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-144">
-                                                    <a title="Nature" href="portfolio/nature/index.html">Nature</a>
-                                                </li>
-                                                <li id="menu-item-143"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-143">
-                                                    <a title="People" href="portfolio/people/index.html">People</a>
-                                                </li>
-                                                <li id="menu-item-142"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-142">
-                                                    <a title="Places" href="portfolio/places/index.html">Places</a>
-                                                </li>
-                                                <li id="menu-item-141"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-141">
-                                                    <a title="Wedding" href="portfolio/wedding/index.html">Wedding</a>
-                                                </li>
-                                                <li id="menu-item-140"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-140">
-                                                    <a title="Wildlife"
-                                                        href="portfolio/wildlife/index.html">Wildlife</a>
-                                                </li>
-                                                <li id="menu-item-139"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-139">
-                                                    <a title="Maternity"
-                                                        href="portfolio/maternity/index.html">Maternity</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-125"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125">
-                                            <a title="Contact" href="contact/index.html">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav><!-- End Navigation -->
-                        </div>
-                    </div>
-
-                    <div class='header-mobile-navigation clearfix'>
-                        <div class="mobile-menu">
-                            <ul id="mobile-menu" class="clearfix">
-                                <li
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-38 current_page_item menu-item-128">
-                                    <a title="Home" href="index.html" aria-current="page">Home</a>
+                    </section>
+                </article>
+            </div>
+            <div class="col-lg-3">
+                <aside>
+                    <ul>
+                        <li id="text-2" class="widget widget_text">
+                            <h5 class="widgettitle">About Me</h5>
+                            <div class="textwidget">
+                                <p><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-119"
+                                        src="{% static 'partners/pradip.jpg' %}" alt="" width="250" height="250" />
+                                </p>
+                                <p>Hi, I’m Pradip Rathod, a photographer, traveler &amp; blogger. Sed ut perspiciatis
+                                    unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                </p>
+                            </div>
+                        </li>
+                        <li id="gleam_recent_posts_img_w-2" class="widget gleam_recent_posts_img_w">
+                            <h5 class="widgettitle">Recent Articles</h5>
+                            <div class="widget-display-posts-img">
+                                <ul>
+                                    <li>
+                                        <div class="display-post-holder">
+                                            <div class="display-post-img"> <a
+                                                    href="#"
+                                                    title="Lovely Wedding"><img width="125" height="96"
+                                                        src="{% static 'wp-content/uploads/blog-9.jpg' %}"
+                                                        class="img-fluid wp-post-image" alt="Lovely Wedding"
+                                                        decoding="async" title="Lovely Wedding" loading="lazy"
+                                                        srcset="https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-9.jpg 1300w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-9-768x591.jpg 768w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-9-850x654.jpg 850w"
+                                                        sizes="(max-width: 125px) 100vw, 125px" /> </a></div>
+                                            <div class="display-post-text">
+                                                <p class="display-post-date">January 16, 2023</p>
+                                                <div class="display-post-title"><a
+                                                        href="#">Lovely
+                                                        Wedding</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="display-post-holder">
+                                            <div class="display-post-img"> <a
+                                                    href="3"
+                                                    title="New Dress Collection"><img width="125" height="96"
+                                                        src="{% static 'wp-content/uploads/blog-8.jpg' %}"
+                                                        class="img-fluid wp-post-image" alt="New Dress Collection"
+                                                        decoding="async" title="New Dress Collection" loading="lazy"
+                                                        srcset="https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-8.jpg 1300w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-8-768x591.jpg 768w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-8-850x654.jpg 850w"
+                                                        sizes="(max-width: 125px) 100vw, 125px" /> </a></div>
+                                            <div class="display-post-text">
+                                                <p class="display-post-date">January 15, 2023</p>
+                                                <div class="display-post-title"><a
+                                                        href="#">New
+                                                        Dress Collection</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="display-post-holder">
+                                            <div class="display-post-img"> <a href="index.html"
+                                                    title="Family Moments"><img width="125" height="96"
+                                                        src="{% static 'wp-content/uploads/blog-2.jpg' %}"
+                                                        class="img-fluid wp-post-image" alt="Family Moments"
+                                                        decoding="async" title="Family Moments" loading="lazy"
+                                                        srcset="https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-2.jpg 1300w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-2-768x591.jpg 768w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-2-850x654.jpg 850w"
+                                                        sizes="(max-width: 125px) 100vw, 125px" /> </a></div>
+                                            <div class="display-post-text">
+                                                <p class="display-post-date">January 14, 2023</p>
+                                                <div class="display-post-title"><a href="index.html">Family
+                                                        Moments</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="display-post-holder">
+                                            <div class="display-post-img"> <a
+                                                    href="#"
+                                                    title="Red Project"><img width="125" height="96"
+                                                        src="{% static 'wp-content/uploads/blog-6.jpg' %}"
+                                                        class="img-fluid wp-post-image" alt="Red Project"
+                                                        decoding="async" title="Red Project" loading="lazy"
+                                                        srcset="https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-6.jpg 1300w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-6-768x591.jpg 768w, https://matchthemes.com/demowp/gleam/wp-content/uploads/blog-6-850x654.jpg 850w"
+                                                        sizes="(max-width: 125px) 100vw, 125px" /> </a></div>
+                                            <div class="display-post-text">
+                                                <p class="display-post-date">January 13, 2023</p>
+                                                <div class="display-post-title"><a
+                                                        href="#">Red
+                                                        Project</a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="categories-2" class="widget widget_categories">
+                            <h5 class="widgettitle">Categories</h5>
+                            <ul>
+                                <li class="cat-item cat-item-4"><a
+                                        href="{%  url 'wedding' %}">wedding</a>
                                 </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a
-                                        title="About" href="about/index.html">About</a></li>
-                                <li
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-127">
-                                    <a title="Portfolio" href="portfolio/index.html">Portfolio</a>
-                                    <span class="mobile-sub-menu-controller"><i class="icon-arrow-right5"></i></span>
-                                    <ul class="sub-menu clearfix">
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-144">
-                                            <a title="Nature" href="portfolio/nature/index.html">Nature</a>
-                                        </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-143">
-                                            <a title="People" href="portfolio/people/index.html">People</a>
-                                        </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-142">
-                                            <a title="Places" href="portfolio/places/index.html">Places</a>
-                                        </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-141">
-                                            <a title="Wedding" href="portfolio/wedding/index.html">Wedding</a>
-                                        </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-140">
-                                            <a title="Wildlife" href="portfolio/wildlife/index.html">Wildlife</a>
-                                        </li>
-                                        <li
-                                            class="menu-item menu-item-type-post_type menu-item-object-portfolio menu-item-139">
-                                            <a title="Maternity" href="portfolio/maternity/index.html">Maternity</a>
-                                        </li>
-                                    </ul>
+                                <li class="cat-item cat-item-1"><a
+                                        href="{%  url 'pre_wedding' %}">Pre Wedding</a></li>
+                                <li class="cat-item cat-item-2"><a
+                                        href="{%  url 'meternity' %}">Maternity</a>
                                 </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125"><a
-                                        title="Contact" href="contact/index.html">Contact</a></li>
+                                <li class="cat-item cat-item-3"><a
+                                        href="{%  url 'baby_born' %}">New Born</a>
+                                </li>
+                                <li class="cat-item cat-item-3"><a
+                                href="{%  url 'baby_photoshoot' %}">Baby Photoshoot</a>
+                            </li>
                             </ul>
-                        </div>
-                    </div>
+                        </li>
+                        <li id="archives-2" class="widget widget_archive">
+                            <h5 class="widgettitle">Archives</h5>
+                            <ul>
+                                <li><a href='#'>January 2023</a></li>
+                            </ul>
+                        </li>
+                        <li id="tag_cloud-2" class="widget widget_tag_cloud">
+                            <h5 class="widgettitle">Tags</h5>
+                            <div class="tagcloud"><a href="#"
+                                    class="tag-cloud-link tag-link-27 tag-link-position-1" style="font-size: 8pt;"
+                                    aria-label="blue (1 item)">blue</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-21 tag-link-position-2" style="font-size: 8pt;"
+                                    aria-label="city (1 item)">city</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-5 tag-link-position-3" style="font-size: 8pt;"
+                                    aria-label="dress (1 item)">dress</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 8pt;"
+                                    aria-label="family (1 item)">family</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-7 tag-link-position-5" style="font-size: 8pt;"
+                                    aria-label="fashion shoot (1 item)">fashion shoot</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-20 tag-link-position-6" style="font-size: 8pt;"
+                                    aria-label="friend (1 item)">friend</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-13 tag-link-position-7" style="font-size: 8pt;"
+                                    aria-label="hugs (1 item)">hugs</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-18 tag-link-position-8" style="font-size: 8pt;"
+                                    aria-label="light (1 item)">light</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-12 tag-link-position-9" style="font-size: 8pt;"
+                                    aria-label="mom (1 item)">mom</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-6 tag-link-position-10" style="font-size: 22pt;"
+                                    aria-label="nature (2 items)">nature</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-17 tag-link-position-11" style="font-size: 8pt;"
+                                    aria-label="neon (1 item)">neon</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-16 tag-link-position-12" style="font-size: 8pt;"
+                                    aria-label="night (1 item)">night</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-9 tag-link-position-13" style="font-size: 22pt;"
+                                    aria-label="photo shoot (2 items)">photo shoot</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-19 tag-link-position-14" style="font-size: 8pt;"
+                                    aria-label="portrait (1 item)">portrait</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-14 tag-link-position-15" style="font-size: 8pt;"
+                                    aria-label="red (1 item)">red</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-25 tag-link-position-16" style="font-size: 8pt;"
+                                    aria-label="road (1 item)">road</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-10 tag-link-position-17" style="font-size: 8pt;"
+                                    aria-label="seaside (1 item)">seaside</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-22 tag-link-position-18" style="font-size: 8pt;"
+                                    aria-label="summer (1 item)">summer</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-26 tag-link-position-19" style="font-size: 22pt;"
+                                    aria-label="sun (2 items)">sun</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-23 tag-link-position-20" style="font-size: 8pt;"
+                                    aria-label="trip (1 item)">trip</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-24 tag-link-position-21" style="font-size: 8pt;"
+                                    aria-label="vacation (1 item)">vacation</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-8 tag-link-position-22" style="font-size: 8pt;"
+                                    aria-label="wedding (1 item)">wedding</a> <a
+                                    href="#"
+                                    class="tag-cloud-link tag-link-15 tag-link-position-23" style="font-size: 8pt;"
+                                    aria-label="woman (1 item)">woman</a></div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer-instagram">
+    <div id="block-2" class="widget-footer-instagram widget_block">
+        <div id="sb_instagram" class="sbi sbi_mob_col_2 sbi_tab_col_8 sbi_col_8 sbi_width_resp" data-feedid="*2"
+            data-res="auto" data-cols="8" data-colsmobile="2" data-colstablet="8" data-num="8" data-nummobile="8"
+            data-shortcode-atts="{&quot;feed&quot;:&quot;2&quot;}" data-postid="13" data-locatornonce="cb0414da5d"
+            data-sbi-flags="favorLocal">
+            <div id="sbi_images">
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17892175963942408"
+                    data-date="1615020215">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEi1r2HTIo/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/156868825_143347307657413_27011188971515420_n.jpg?_nc_cat=100&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=QyS2QhtORLQAX9IlT-R&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfC2SKmvjcRtntDNJAK744Z2G4OP34eUVSr-cDECtB61Gg&#038;oe=6515B0AB"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156868825_143347307657413_27011188971515420_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QyS2QhtORLQAX9IlT-R&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfC2SKmvjcRtntDNJAK744Z2G4OP34eUVSr-cDECtB61Gg&amp;oe=6515B0AB&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156868825_143347307657413_27011188971515420_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QyS2QhtORLQAX9IlT-R&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfC2SKmvjcRtntDNJAK744Z2G4OP34eUVSr-cDECtB61Gg&amp;oe=6515B0AB&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156868825_143347307657413_27011188971515420_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QyS2QhtORLQAX9IlT-R&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfC2SKmvjcRtntDNJAK744Z2G4OP34eUVSr-cDECtB61Gg&amp;oe=6515B0AB&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156868825_143347307657413_27011188971515420_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=QyS2QhtORLQAX9IlT-R&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfC2SKmvjcRtntDNJAK744Z2G4OP34eUVSr-cDECtB61Gg&amp;oe=6515B0AB&quot;}">
+                            <span class="sbi-screenreader">Monet&#039;s garden at Giverny</span> <img decoding="async"
+                                src='{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}''
+                                alt="Monet&#039;s garden at Giverny"> </a></div>
                 </div>
-            </header> <!-- END HEADER -->
-            <!-- Header End -->
-
-            {% block body %}
-
-            {% endblock %}
-        </div>
-        <div class="loader page-loader">
-            <div class="loader-style1-wrap">
-              <div class="loader-style1-double-bounce1"></div>
-              <div class="loader-style1-double-bounce2"></div>
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_18200429695061887"
+                    data-date="1615019977">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEiYkbHdRh/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/157676486_192081618923494_6232268817957443723_n.jpg?_nc_cat=111&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=qs-M8CLIUnAAX-_Laha&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfDjE0ghNGrwacQkTB-jklxKIn-YpBrfnyhNYuGh-Hvnag&#038;oe=6515BF87"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157676486_192081618923494_6232268817957443723_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=qs-M8CLIUnAAX-_Laha&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDjE0ghNGrwacQkTB-jklxKIn-YpBrfnyhNYuGh-Hvnag&amp;oe=6515BF87&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157676486_192081618923494_6232268817957443723_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=qs-M8CLIUnAAX-_Laha&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDjE0ghNGrwacQkTB-jklxKIn-YpBrfnyhNYuGh-Hvnag&amp;oe=6515BF87&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157676486_192081618923494_6232268817957443723_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=qs-M8CLIUnAAX-_Laha&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDjE0ghNGrwacQkTB-jklxKIn-YpBrfnyhNYuGh-Hvnag&amp;oe=6515BF87&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157676486_192081618923494_6232268817957443723_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=qs-M8CLIUnAAX-_Laha&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDjE0ghNGrwacQkTB-jklxKIn-YpBrfnyhNYuGh-Hvnag&amp;oe=6515BF87&quot;}">
+                            <span class="sbi-screenreader">spot the 3rd subject</span> <img decoding="async"
+                                src="{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}"
+                                alt="spot the 3rd subject"> </a></div>
+                </div>
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17890644307917046"
+                    data-date="1615019528">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEhhxonpGF/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/157335728_131845592186117_997210521576511087_n.jpg?_nc_cat=104&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=RP0LnPPuaHIAX_BUFZg&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfAAMKoe7o6yqs1Or4kTxw5bHGHQx51rU7f093CXqIsGSg&#038;oe=6514C12F"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157335728_131845592186117_997210521576511087_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=RP0LnPPuaHIAX_BUFZg&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAAMKoe7o6yqs1Or4kTxw5bHGHQx51rU7f093CXqIsGSg&amp;oe=6514C12F&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157335728_131845592186117_997210521576511087_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=RP0LnPPuaHIAX_BUFZg&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAAMKoe7o6yqs1Or4kTxw5bHGHQx51rU7f093CXqIsGSg&amp;oe=6514C12F&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157335728_131845592186117_997210521576511087_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=RP0LnPPuaHIAX_BUFZg&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAAMKoe7o6yqs1Or4kTxw5bHGHQx51rU7f093CXqIsGSg&amp;oe=6514C12F&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157335728_131845592186117_997210521576511087_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=RP0LnPPuaHIAX_BUFZg&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAAMKoe7o6yqs1Or4kTxw5bHGHQx51rU7f093CXqIsGSg&amp;oe=6514C12F&quot;}">
+                            <span class="sbi-screenreader">Instagram post 17890644307917046</span> <img decoding="async"
+                                src="{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}"
+                                alt="Instagram post 17890644307917046"> </a></div>
+                </div>
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17873688902316718"
+                    data-date="1615019450">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEhYO3HdlA/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/157033867_439513020495635_514319514856798527_n.jpg?_nc_cat=103&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=ZNB9S8XWuNMAX9JFXvv&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfBFT2OBR7dKz5CbwoG3INFJMSQwsjRPCUKfFXsVo5bkQA&#038;oe=651584C0"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157033867_439513020495635_514319514856798527_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ZNB9S8XWuNMAX9JFXvv&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBFT2OBR7dKz5CbwoG3INFJMSQwsjRPCUKfFXsVo5bkQA&amp;oe=651584C0&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157033867_439513020495635_514319514856798527_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ZNB9S8XWuNMAX9JFXvv&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBFT2OBR7dKz5CbwoG3INFJMSQwsjRPCUKfFXsVo5bkQA&amp;oe=651584C0&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157033867_439513020495635_514319514856798527_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ZNB9S8XWuNMAX9JFXvv&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBFT2OBR7dKz5CbwoG3INFJMSQwsjRPCUKfFXsVo5bkQA&amp;oe=651584C0&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157033867_439513020495635_514319514856798527_n.jpg?_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ZNB9S8XWuNMAX9JFXvv&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBFT2OBR7dKz5CbwoG3INFJMSQwsjRPCUKfFXsVo5bkQA&amp;oe=651584C0&quot;}">
+                            <span class="sbi-screenreader">Instagram post 17873688902316718</span> <img decoding="async"
+                                src="{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}"
+                                alt="Instagram post 17873688902316718"> </a></div>
+                </div>
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17876591750211663"
+                    data-date="1615019428">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEhVnVnqYO/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/156673844_817657968823586_5940851470168064623_n.jpg?_nc_cat=111&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=sYNa-CxDsKYAX_yTla_&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfBWErPZpHsdAJxLNaVMNNE9BODpQ65ThAKGczMzQ3xxAw&#038;oe=6514FB83"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156673844_817657968823586_5940851470168064623_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=sYNa-CxDsKYAX_yTla_&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBWErPZpHsdAJxLNaVMNNE9BODpQ65ThAKGczMzQ3xxAw&amp;oe=6514FB83&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156673844_817657968823586_5940851470168064623_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=sYNa-CxDsKYAX_yTla_&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBWErPZpHsdAJxLNaVMNNE9BODpQ65ThAKGczMzQ3xxAw&amp;oe=6514FB83&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156673844_817657968823586_5940851470168064623_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=sYNa-CxDsKYAX_yTla_&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBWErPZpHsdAJxLNaVMNNE9BODpQ65ThAKGczMzQ3xxAw&amp;oe=6514FB83&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156673844_817657968823586_5940851470168064623_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=sYNa-CxDsKYAX_yTla_&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfBWErPZpHsdAJxLNaVMNNE9BODpQ65ThAKGczMzQ3xxAw&amp;oe=6514FB83&quot;}">
+                            <span class="sbi-screenreader">Instagram post 17876591750211663</span> <img decoding="async"
+                                src="{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}"
+                                alt="Instagram post 17876591750211663"> </a></div>
+                </div>
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17995829050317355"
+                    data-date="1615017735">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEeG87nDvz/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/157346955_874729569971679_1010064583557438001_n.jpg?_nc_cat=109&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=8NtVUDVfqlIAX_dbXWM&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfAXVHyOA4Kq1ijBwYVqlA1pmPBCB1GamegRLmVaLkI-UQ&#038;oe=65156FF9"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157346955_874729569971679_1010064583557438001_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=8NtVUDVfqlIAX_dbXWM&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAXVHyOA4Kq1ijBwYVqlA1pmPBCB1GamegRLmVaLkI-UQ&amp;oe=65156FF9&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157346955_874729569971679_1010064583557438001_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=8NtVUDVfqlIAX_dbXWM&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAXVHyOA4Kq1ijBwYVqlA1pmPBCB1GamegRLmVaLkI-UQ&amp;oe=65156FF9&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157346955_874729569971679_1010064583557438001_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=8NtVUDVfqlIAX_dbXWM&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAXVHyOA4Kq1ijBwYVqlA1pmPBCB1GamegRLmVaLkI-UQ&amp;oe=65156FF9&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157346955_874729569971679_1010064583557438001_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=8NtVUDVfqlIAX_dbXWM&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfAXVHyOA4Kq1ijBwYVqlA1pmPBCB1GamegRLmVaLkI-UQ&amp;oe=65156FF9&quot;}">
+                            <span class="sbi-screenreader">Instagram post 17995829050317355</span> <img decoding="async"
+                                src="{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}"
+                                alt="Instagram post 17995829050317355"> </a></div>
+                </div>
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17850713378521427"
+                    data-date="1615017074">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEc2LzHbkR/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/156620412_2874985996093076_6812370245932026144_n.jpg?_nc_cat=106&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=E6TtSh4trqgAX8So_cE&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfDt9Xs3cGN-vy7vdp7uzndCwv7g0N0mYEX76fYQNYxX9w&#038;oe=6514BF97"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156620412_2874985996093076_6812370245932026144_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=E6TtSh4trqgAX8So_cE&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDt9Xs3cGN-vy7vdp7uzndCwv7g0N0mYEX76fYQNYxX9w&amp;oe=6514BF97&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156620412_2874985996093076_6812370245932026144_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=E6TtSh4trqgAX8So_cE&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDt9Xs3cGN-vy7vdp7uzndCwv7g0N0mYEX76fYQNYxX9w&amp;oe=6514BF97&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156620412_2874985996093076_6812370245932026144_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=E6TtSh4trqgAX8So_cE&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDt9Xs3cGN-vy7vdp7uzndCwv7g0N0mYEX76fYQNYxX9w&amp;oe=6514BF97&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/156620412_2874985996093076_6812370245932026144_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=E6TtSh4trqgAX8So_cE&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDt9Xs3cGN-vy7vdp7uzndCwv7g0N0mYEX76fYQNYxX9w&amp;oe=6514BF97&quot;}">
+                            <span class="sbi-screenreader">Instagram post 17850713378521427</span> <img decoding="async"
+                                src="{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}"
+                                alt="Instagram post 17850713378521427"> </a></div>
+                </div>
+                <div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17874541289272893"
+                    data-date="1615016759">
+                    <div class="sbi_photo_wrap"> <a class="sbi_photo" href="https://www.instagram.com/p/CMEcPzYHhjB/"
+                            target="_blank" rel="noopener nofollow"
+                            data-full-res="https://scontent-sjc3-1.cdninstagram.com/v/t51.29350-15/157638776_350087649577063_5408714711201321750_n.jpg?_nc_cat=105&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=iFHtfYW8kHUAX8iEWzt&#038;_nc_ht=scontent-sjc3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AfDgBHTnDMKW7no1gdB0fzk6sVpv-pXaxXceWriMFlxHSw&#038;oe=6514F9E8"
+                            data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157638776_350087649577063_5408714711201321750_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=iFHtfYW8kHUAX8iEWzt&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDgBHTnDMKW7no1gdB0fzk6sVpv-pXaxXceWriMFlxHSw&amp;oe=6514F9E8&quot;,&quot;150&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157638776_350087649577063_5408714711201321750_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=iFHtfYW8kHUAX8iEWzt&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDgBHTnDMKW7no1gdB0fzk6sVpv-pXaxXceWriMFlxHSw&amp;oe=6514F9E8&quot;,&quot;320&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157638776_350087649577063_5408714711201321750_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=iFHtfYW8kHUAX8iEWzt&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDgBHTnDMKW7no1gdB0fzk6sVpv-pXaxXceWriMFlxHSw&amp;oe=6514F9E8&quot;,&quot;640&quot;:&quot;https:\/\/scontent-sjc3-1.cdninstagram.com\/v\/t51.29350-15\/157638776_350087649577063_5408714711201321750_n.jpg?_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=iFHtfYW8kHUAX8iEWzt&amp;_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AfDgBHTnDMKW7no1gdB0fzk6sVpv-pXaxXceWriMFlxHSw&amp;oe=6514F9E8&quot;}">
+                            <span class="sbi-screenreader">Instagram post 17874541289272893</span> <img decoding="async"
+                                src="{% static 'wp-content/plugins/instagram-feed/img/placeholder.png' %}"
+                                alt="Instagram post 17874541289272893"> </a></div>
+                </div>
             </div>
-          </div>
-          <a href="#" id="back-to-top" class="layout-wide"><i class="font-icon icon-arrow_carrot-up"></i></a>
+            <div id="sbi_load"></div> <span class="sbi_resized_image_data" data-feed-id="*2"
+                data-resized="{&quot;17892175963942408&quot;:{&quot;id&quot;:&quot;156868825_143347307657413_27011188971515420_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18200429695061887&quot;:{&quot;id&quot;:&quot;157676486_192081618923494_6232268817957443723_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17890644307917046&quot;:{&quot;id&quot;:&quot;157335728_131845592186117_997210521576511087_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17873688902316718&quot;:{&quot;id&quot;:&quot;157033867_439513020495635_514319514856798527_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17876591750211663&quot;:{&quot;id&quot;:&quot;156673844_817657968823586_5940851470168064623_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17995829050317355&quot;:{&quot;id&quot;:&quot;157346955_874729569971679_1010064583557438001_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17850713378521427&quot;:{&quot;id&quot;:&quot;156620412_2874985996093076_6812370245932026144_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17874541289272893&quot;:{&quot;id&quot;:&quot;157638776_350087649577063_5408714711201321750_n&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}}}">
+            </span>
+        </div>
     </div>
+</div>
 
-    <input type="hidden" id="ajax_url" value="https://oshinewptheme.com/v22/wp-admin/admin-ajax.php" />
-
-  <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="pswp__bg"></div>
-
-    <div class="pswp__scroll-wrap">
-
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip">
-            <!-- <a href="#" class="pswp__share--facebook"></a>
-							<a href="#" class="pswp__share--twitter"></a>
-							<a href="#" class="pswp__share--pinterest"></a>
-							<a href="#" download class="pswp__share--download"></a> -->
-          </div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-        <div class="pswp__caption">
-          <div class="pswp__caption__center">
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-    <!-- Footer Section Begin -->
-    <footer class="footer-section">
-
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Js Plugins -->
-    <script src="{% static 'cdn-cgi/apps/head/ZcKBGpuGsKB_Drv7wiWR2A52BcE.js' %}"></script>
-    <link rel="canonical" href="index.html" />
-    <script type="application/ld+json"
-        class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://oshinewptheme.com/v22/#person","name":"Oshine - Lifestyle Photography"},{"@type":"WebSite","@id":"https://oshinewptheme.com/v22/#website","url":"https://oshinewptheme.com/v22","name":"Oshine - Lifestyle Photography","publisher":{"@id":"https://oshinewptheme.com/v22/#person"},"inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://oshinewptheme.com/v22/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://oshinewptheme.com/v22/#webpage","url":"https://oshinewptheme.com/v22/","name":"Home \u2013 Vaani Photography","datePublished":"2015-11-05T08:47:40+00:00","dateModified":"2019-10-24T18:54:19+00:00","about":{"@id":"https://oshinewptheme.com/v22/#person"},"isPartOf":{"@id":"https://oshinewptheme.com/v22/#website"},"inLanguage":"en-US"},{"@type":"Person","@id":"https://oshinewptheme.com/v22/author/v18/","name":"v18","url":"https://oshinewptheme.com/v22/author/v18/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/e2e4962049e798107bc86b57d8fbbbe6?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/e2e4962049e798107bc86b57d8fbbbe6?s=96&amp;d=mm&amp;r=g","caption":"v18","inLanguage":"en-US"}},{"@type":"Article","headline":"Home \u2013 Vaani Photography","datePublished":"2015-11-05T08:47:40+00:00","dateModified":"2019-10-24T18:54:19+00:00","author":{"@id":"https://oshinewptheme.com/v22/author/v18/","name":"v18"},"publisher":{"@id":"https://oshinewptheme.com/v22/#person"},"name":"Home \u2013 Vaani Photography","@id":"https://oshinewptheme.com/v22/#richSnippet","isPartOf":{"@id":"https://oshinewptheme.com/v22/#webpage"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://oshinewptheme.com/v22/#webpage"}}]}</script>
-    <script type="text/javascript">
-        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/oshinewptheme.com\/v22\/wp-includes\/js\/wp-emoji-release.min.js" } };
-        /*! This file is auto-generated */
-        !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode, e = (p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0), i.toDataURL()); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = {% static e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (p && p.fillText) switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([129777, 127995, 8205, 129778, 127999], [129777, 127995, 8203, 129778, 127999]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji))) }(window, document, window._wpemojiSettings);
-    </script>
-    <script type='text/javascript' src="{% static 'wp-includes/js/jquery/jquery.mina7a0.js' %}"
-        id='jquery-core-js'></script>
-    <script type='text/javascript' src="{% static 'wp-includes/js/jquery/jquery-migrate.mind617.js' %}"
-        id='jquery-migrate-js'></script>
-    <script type='text/javascript'
-        src="{% static 'wp-content/plugins/revslider/public/assets/js/revolution.tools.minf049.js' %}"
-        id='tp-tools-js'></script>
-    <script type='text/javascript' src="{% static 'wp-content/plugins/revslider/public/assets/js/rs6.min6fb3.js' %}"
-        id='revmin-js'></script>
-    <script type='text/javascript'
-        src="{% static 'wp-content/plugins/tatsu/includes/typehub/public/js/webfont.min6fb3.js' %}"
-        id='webfontloader-js'></script>
-    <script type='text/javascript' src="{% static 'wp-content/themes/oshin/js/vendor/modernizr.min6fb3.js' %}"
-        id='modernizr-js'></script>
-    <script>var ms_grabbing_curosr = 'wp-content/plugins/masterslider/public/assets/css/common/grabbing.html', ms_grab_curosr = 'wp-content/plugins/masterslider/public/assets/css/common/grab.html';</script>
-    <script type='text/javascript' src="{% static 'wp-includes/js/comment-reply.min6fb3.js' %}"
-        id='comment-reply-js'></script>
-    <script type='text/javascript'
-        src="{% static 'wp-content/plugins/oshine-modules/public/js/vendor/asyncloader.min5152.js' %}"
-        id='asyncloader-js'></script>
-    <script type='text/javascript' src="{% static 'wp-includes/js/jquery/ui/core.min3f14.js' %}"
-        id='jquery-ui-core-js'></script>
-    <script type='text/javascript' src="{% static 'wp-includes/js/jquery/ui/accordion.min3f14.js' %}"
-        id='jquery-ui-accordion-js'></script>
-    <script type='text/javascript' src="{% static 'wp-includes/js/jquery/ui/tabs.min3f14.js' %}"
-        id='jquery-ui-tabs-js'></script>
-    <script type='text/javascript' id='oshine-modules-js-extra'>
-        /* <![CDATA[ */
-        var oshineModulesConfig = { "pluginUrl": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/", "vendorScriptsUrl": "\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/", "dependencies": { "asyncloader": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/asyncloader.min.js", "backgroundcheck": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/backgroundcheck.min.js", "backgroundposition": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/backgroundposition.min.js", "be-modules-plugin": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/be-modules-plugin.min.js", "beslider": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/beslider.min.js", "countdown": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/countdown.min.js", "easing": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/easing.min.js", "easypiechart": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/easypiechart.min.js", "fitvids": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/fitvids.min.js", "fullscreenheight": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/fullscreenheight.min.js", "hoverdir": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/hoverdir.min.js", "imagesloaded": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/imagesloaded.min.js", "isotope": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/isotope.min.js", "justifiedgallery": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/justifiedgallery.min.js", "magnificpopup": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/magnificpopup.min.js", "mousewheel": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/mousewheel.min.js", "owlcarousel": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/owlcarousel.min.js", "photoswipe": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/photoswipe.min.js", "resizetoparent": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/resizetoparent.min.js", "rotate": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/rotate.min.js", "tilt": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/tilt.min.js", "typed": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/typed.min.js", "vivusSVGanimation": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/vivusSVGanimation.min.js", "waypoints": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/oshine-modules\/public\/js\/vendor\/waypoints.min.js" } };
-/* ]]> */
-    </script>
-    <script type='text/javascript'
-        src="{% static 'wp-content/plugins/oshine-modules/public/js/oshine-modules.mincf1b.js' %}"
-        id='oshine-modules-js'></script>
-    <script type='text/javascript'
-        src="{% static 'wp-content/plugins/tatsu/public/js/vendor/es6-promise.auto.min6fb3.js' %}"
-        id='es6-promises-polyfill-js'></script>
-    <script type='text/javascript' src="{% static 'wp-content/plugins/tatsu/public/js/helpers.minccfb.js' %}"
-        id='be-script-helpers-js'></script>
-    <script type='text/javascript'
-        src="{% static 'wp-content/plugins/tatsu/public/js/vendor/debouncedresize.minccfb.js' %}"
-        id='debouncedresize-js'></script>
-    <script type='text/javascript' id='tatsu-js-extra'>
-        /* <![CDATA[ */
-        var tatsuFrontendConfig = { "ajax_url": "https:\/\/oshinewptheme.com\/v22\/wp-admin\/admin-ajax.php", "pluginUrl": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu", "vendorScriptsUrl": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/", "mapsApiKey": "AIzaSyCmcsMuS830hpPUQnRNB-NsiYoHDt8sH8o", "dependencies": { "anime": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/anime.min.js?ver=3.4.2", "asyncloader": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/asyncloader.min.js?ver=3.4.2", "backgroundposition": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/backgroundposition.min.js?ver=3.4.2", "begrid": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/begrid.min.js?ver=3.4.2", "countTo": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/countTo.min.js?ver=3.4.2", "debouncedresize": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/debouncedresize.min.js?ver=3.4.2", "es6-promise.auto": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/es6-promise.auto.min.js?ver=3.4.2", "fitvids": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/fitvids.min.js?ver=3.4.2", "flickity": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/flickity.min.js?ver=3.4.2", "hoverintent": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/hoverintent.min.js?ver=3.4.2", "imagesloaded": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/imagesloaded.min.js?ver=3.4.2", "isotope": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/isotope.min.js", "magnificpopup": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/magnificpopup.min.js?ver=3.4.2", "stickykit": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/stickykit.min.js?ver=3.4.2", "superfish": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/superfish.min.js", "tatsuCarousel": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/tatsuCarousel.min.js?ver=3.4.2", "tatsuColumnParallax": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/tatsuColumnParallax.min.js?ver=3.4.2", "tatsuParallax": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/tatsuParallax.min.js?ver=3.4.2", "tilt": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/tilt.min.js?ver=3.4.2", "typed": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/typed.min.js?ver=3.4.2", "unveil": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/unveil.min.js?ver=3.4.2", "vivus": "https:\/\/oshinewptheme.com\/v22\/wp-content\/plugins\/tatsu\/public\/js\/vendor\/vivus.min.js?ver=3.4.2" }, "slider_icons": { "left": "<svg viewBox=\"0 0 10 16\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path opacity=\"0.999943\" d=\"M0 0L7 7.1759L0.343184 14\" transform=\"translate(9 15) rotate(-180)\" stroke-width=\"2\"\/>\n<\/svg>\n", "right": "<svg viewBox=\"0 0 10 16\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M0 0L7 7.1759L0.343184 14\" transform=\"translate(1 1)\" stroke-width=\"2\"\/>\n<\/svg>\n" }, "version": "3.4.2", "recaptcha_type": "", "recaptcha_site_key": "" };
-/* ]]> */
-    </script>
-    <script type='text/javascript' src="{% static 'wp-content/plugins/tatsu/public/js/tatsu.minccfb.js' %}"
-        id='tatsu-js'></script>
-    <script type='text/javascript'
-        src="{% static 'wp-content/themes/oshin/js/vendor/perfect-scrollbar.jquery.min6fb3.js' %}"
-        id='custom-scrollbar-js'></script>
-    <script type='text/javascript' id='be-themes-script-js-js-extra'>
-        /* <![CDATA[ */
-        var oshineThemeConfig = { "vendorScriptsUrl": "\/wp-content\/themes\/oshin\/js\/vendor\/", "dependencies": { "asyncloader": "\/wp-content\/themes\/oshin\/js\/vendor\/asyncloader.min.js", "backgroundcheck": "\/wp-content\/themes\/oshin\/js\/vendor\/backgroundcheck.min.js", "backgroundposition": "\/wp-content\/themes\/oshin\/js\/vendor\/backgroundposition.min.js", "classie": "\/wp-content\/themes\/oshin\/js\/vendor\/classie.min.js", "easing": "\/wp-content\/themes\/oshin\/js\/vendor\/easing.min.js", "fitvids": "\/wp-content\/themes\/oshin\/js\/vendor\/fitvids.min.js", "flickity": "\/wp-content\/themes\/oshin\/js\/vendor\/flickity.min.js", "fullscreenheight": "\/wp-content\/themes\/oshin\/js\/vendor\/fullscreenheight.min.js", "galaxycanvas": "\/wp-content\/themes\/oshin\/js\/vendor\/galaxycanvas.min.js", "greensock": "\/wp-content\/themes\/oshin\/js\/vendor\/greensock.min.js", "horizontalcarousel": "\/wp-content\/themes\/oshin\/js\/vendor\/horizontalcarousel.min.js", "hoverintent": "\/wp-content\/themes\/oshin\/js\/vendor\/hoverintent.min.js", "imagesloaded": "\/wp-content\/themes\/oshin\/js\/vendor\/imagesloaded.min.js", "isotope": "\/wp-content\/themes\/oshin\/js\/vendor\/isotope.min.js", "magnificpopup": "\/wp-content\/themes\/oshin\/js\/vendor\/magnificpopup.min.js", "mcustomscrollbar": "\/wp-content\/themes\/oshin\/js\/vendor\/mcustomscrollbar.min.js", "modernizr": "\/wp-content\/themes\/oshin\/js\/vendor\/modernizr.min.js", "mousewheel": "\/wp-content\/themes\/oshin\/js\/vendor\/mousewheel.min.js", "multi_level_menu": "\/wp-content\/themes\/oshin\/js\/vendor\/multi_level_menu.min.js", "old_menu_animation": "\/wp-content\/themes\/oshin\/js\/vendor\/old_menu_animation.min.js", "page_stack_top": "\/wp-content\/themes\/oshin\/js\/vendor\/page_stack_top.min.js", "patterncanvas": "\/wp-content\/themes\/oshin\/js\/vendor\/patterncanvas.min.js", "perfect-scrollbar.jquery": "\/wp-content\/themes\/oshin\/js\/vendor\/perfect-scrollbar.jquery.min.js", "perspective_navigation": "\/wp-content\/themes\/oshin\/js\/vendor\/perspective_navigation.min.js", "request_animation_frame": "\/wp-content\/themes\/oshin\/js\/vendor\/request_animation_frame.min.js", "resizetoparent": "\/wp-content\/themes\/oshin\/js\/vendor\/resizetoparent.min.js", "scrolltosections": "\/wp-content\/themes\/oshin\/js\/vendor\/scrolltosections.min.js", "simplebar": "\/wp-content\/themes\/oshin\/js\/vendor\/simplebar.min.js", "simplebar_old": "\/wp-content\/themes\/oshin\/js\/vendor\/simplebar_old.min.js", "sticky_sections": "\/wp-content\/themes\/oshin\/js\/vendor\/sticky_sections.min.js", "stickykit": "\/wp-content\/themes\/oshin\/js\/vendor\/stickykit.min.js", "superfish": "\/wp-content\/themes\/oshin\/js\/vendor\/superfish.min.js", "transparentheader": "\/wp-content\/themes\/oshin\/js\/vendor\/transparentheader.min.js", "waterdropcanvas": "\/wp-content\/themes\/oshin\/js\/vendor\/waterdropcanvas.min.js", "webfont": "\/wp-content\/themes\/oshin\/js\/vendor\/webfont.min.js" } };
-/* ]]> */
-    </script>
-    <script type='text/javascript' src="{% static 'wp-content/themes/oshin/js/script.min03db.js' %}"
-        id='be-themes-script-js-js'></script>
-    <!-- Option Panel Custom JavaScript -->
-    <script>
-//jQuery(document).ready(function(){
-    // });
-    </script>
-
-</body>
-
-</html>
+{% endblock %}

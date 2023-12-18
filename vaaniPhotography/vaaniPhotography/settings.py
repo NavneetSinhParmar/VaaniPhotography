@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-wi81vhr#f*n=q3sx5y!$c^38h!$5%!@(^6u*2sb%y6a_ydez@l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["172.31.19.149","vaaniphotography.com"]
+ALLOWED_HOSTS = ["16.16.67.188","127.0.0.1","vaaniphotography.com","www.vaaniphotography.com"]
 
 
 # Application definition
@@ -108,14 +108,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-STATIC_URL = '/static/'
-
-STATICFILES_DIRS = [
-    BASE_DIR / 'MyApp/static',  # Assuming your 'static' folder is in the project root.
-    # Add other directories if needed:
-    # '/path/to/your/additional/static/folder/',
-]
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
@@ -134,6 +126,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'static_collected'
+#STATIC_ROOT = "/var/www/VaaniPhotography/vaaniPhotography/static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    '/var/www/VaaniPhotography/vaaniPhotography/MyApp/static/',  # Absolute path to your static files directory
+]
+
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = True
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
