@@ -13,5 +13,6 @@ urlpatterns = [
     path('baby_photoshoot', views.baby_photoshoot_view, name='baby_photoshoot'),
     path('album', views.album_view, name='album'),
     path('video', views.video_view, name='video'),
+    path('contact/', views.contact_us, name='contact_us'),
     # Define other URL patterns here
 ]
